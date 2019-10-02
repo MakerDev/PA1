@@ -73,7 +73,7 @@ int main(int argc, char** argv)
     struct timeval end;
     gettimeofday(&end, NULL);
 
-    fprintf(stderr, "%s: %lf\n", sort_funcs_name[i], ((end.tv_sec + end.tv_usec * 0.000001) - (end.tv_sec + end.tv_usec * 0.000001)));
+    fprintf(stderr, "%s: %lf\n", sort_funcs_name[i], ((end.tv_sec + end.tv_usec * 0.000001) - (start.tv_sec + start.tv_usec * 0.000001)));
   }
 
   // TODO: Print sorted result as written in ./out.
